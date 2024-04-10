@@ -28,8 +28,8 @@ export default function ResultsPage() {
           Authorization: `Bearer ${auth.token}`,
         },
         params: {
-          originLocationCode: 'LAX',
-          destinationLocationCode: 'JFK',
+          originLocationCode: 'NYC',
+          destinationLocationCode: localStorage.getItem('randomCity'),
           departureDate: "2024-05-01",
           adults: "1",
         },
